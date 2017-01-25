@@ -10,7 +10,7 @@ namespace skeleton.Repository {
 
         private List<Artist> artists = new List<Artist>();
 
-        public ArtistRepo( [FromServices]AssetMapper assetMapper ) { //Dependecy Injected here, Add your asset
+        public ArtistRepo( [FromServices]AssetMapper assetMapper ) { //Dependecy Injected here, (this could be a database service or any other repository of assets for the webpage)
             this.artists = assetMapper.artists;
         }
         Artist IArtistRepo.GetByName( string name ) {
