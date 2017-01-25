@@ -1,0 +1,15 @@
+<template>
+    <nav class="navbar">
+        <div class="nav-header">
+            <a href="">BOHUSKONST</a>
+        </div>
+        <div class="nav-links">
+            <span repeat.for="nav of router.navigation" class="${nav.isActive ? 'navActive' : ''}">
+                <a style="padding-right: 5px;" href.bind="nav.href">${nav.title}</a>
+            </span>
+        </div>
+    </nav>
+    <div class="wrap">
+        <router-view></router-view>
+    </div>
+</template>

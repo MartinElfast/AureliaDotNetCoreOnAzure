@@ -1,0 +1,14 @@
+﻿<template>
+    <div details-container>
+        <h1 class="details-header">${artist.name}</h1>
+        <div class="details-cv-container">
+            <img src="${artist.portraitImgUrl}" />
+            <pre style="font-size: 1.15em;">${artist.cv}</pre>
+        </div>
+        <div class="details-imgs-container">
+            <div repeat.for="img of artist.imgUrls" style="float: right; margin-bottom: 20px; width: 100%;">
+                <img src="${img}" style="max-width: 100%" />
+            </div>
+        </div>
+    </div>
+</template>
