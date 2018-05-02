@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -13,10 +13,9 @@ namespace skeleton.Data {
         public AssetMapper() {
             artists.Clear();
             string dirName = Path.GetDirectoryName( Directory.GetCurrentDirectory() + @"\wwwroot\Artists\" );
-            //var imgPath = Path.GetDirectoryName( Directory.GetCurrentDirectory() + @"\Artists\" );
             //Test/Debug
-            var sw = new System.Diagnostics.Stopwatch();
-            sw.Start(); //POC / testing out if optimization is needed
+            //var sw = new System.Diagnostics.Stopwatch();
+            //sw.Start(); //POC / testing out if optimization is needed
             int idx = 0;
             try {
                 foreach ( string subDir in Directory.GetDirectories( dirName ) ) {
@@ -49,8 +48,8 @@ namespace skeleton.Data {
                 Console.WriteLine( "Just the good ol' excpt:" );
                 Console.WriteLine( excpt );
             }
-            sw.Stop();
-            System.Diagnostics.Debug.WriteLine( $"Mapping artists took: { sw.ElapsedMilliseconds} ms. " );//Results: 6-8ms with 10 artists ~40 imgs, scales linearly with amount of content.            
+            //sw.Stop();
+            //System.Diagnostics.Debug.WriteLine( $"Mapping artists took: { sw.ElapsedMilliseconds} ms. " );//Results: 6-8ms with 10 artists ~40 imgs, scales linearly with amount of content.            
         }
     }
 }
