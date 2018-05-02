@@ -14,9 +14,8 @@ Workflow would be as follows:
   1. Create a folder, give it the name of the artist.
   2. Put all the images for that artist in the folder.
   3. Put a txt file with the CV/resume in the folder (formatting will be kept and appears on the site).
-    4. (Optionals):
-    
-    Name an image "Front" and that one will appear on the landingpage/frontpage (defaults to first img in alphabetical order).
+    4. (Optionals);   
+    Name an image "Front" and that one will appear on the landingpage/frontpage (defaults to first img in alphabetical order).  
     Name an image "Profile" and it will appear above the CV on the artists details page (a picture of the actual artist).
     
 Finally: Move all the folders onto the server.
