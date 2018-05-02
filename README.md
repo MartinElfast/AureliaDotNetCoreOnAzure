@@ -1,6 +1,6 @@
 # AureliaDotNetCoreOnAzure
 
-Aurelia frontend, ASP.NET Core backend hosted on Azure (host is not active anymore)
+### Aurelia frontend, ASP.NET Core backend hosted on Azure (host is not active anymore)
 
 Backstory: Customer with an art business was not able to update the contents of his website, due to lack of technical skill.
 
