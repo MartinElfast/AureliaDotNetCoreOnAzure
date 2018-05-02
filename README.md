@@ -1,4 +1,4 @@
-#AureliaDotNetCoreOnAzure
+# AureliaDotNetCoreOnAzure
 
 Aurelia frontend, ASP.NET Core backend hosted on Azure (host is not active anymore)
 
