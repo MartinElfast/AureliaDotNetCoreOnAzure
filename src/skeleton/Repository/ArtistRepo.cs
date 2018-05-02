@@ -13,10 +13,10 @@ namespace skeleton.Repository {
         public ArtistRepo( [FromServices]AssetMapper assetMapper ) { //Dependecy Injected here, (this could be a database service or any other repository of assets for the webpage)
             this.artists = assetMapper.artists;
         }
-        Artist IArtistRepo.GetByName( string name ) {
+        public Artist IArtistRepo.GetByName( string name ) {
             return artists.Find( artist => artist.Name == name );
         }
-        Artist IArtistRepo.GetById( int id ) {
+        public Artist IArtistRepo.GetById( int id ) {
             return artists.Find( artist => artist.Id == id );
         }
         public IList<Artist> GetAll() {
