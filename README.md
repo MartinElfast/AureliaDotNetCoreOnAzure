@@ -29,3 +29,6 @@ I designed the backend in the classic MVC pattern for the API and a Repository p
 <a href="https://github.com/MartinElfast/AureliaDotNetCoreOnAzure/blob/master/src/skeleton/Data/Assetmapper.cs">Backend service content sorting algorithm</a>: Injected as an loosley coupled service through the .NET Core IoC system, its invoked as a Scoped service which means it will refresh each request, this is to satisfy the requirement of minimal content management, if new content is added to the server it will be live on the webpage right away.
 
 The frontend is written in mostly TypeScript using the Aurelia framework, the design was supplied by the customer, this is the development branch and content will differ from the live version.
+
+Performance:
+With debugging with development build settings this service ran on the smallest Azure service (250MB RAM), and still had plenty memory to spare. I ran performance tests with more content then the production version, 4 concurrent users refreshing the webpage every 2 seconds and had a full response time cycle of less than 50ms (excluding rendering time for the browser, which varied on different devices) and a memory footpront of less than 25MB RAM usage at peak, this basically scaled linearly with increased concurrent requests.
